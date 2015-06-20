@@ -1,0 +1,64 @@
+<ion-view view-title="Add Producto">
+  <ion-content>
+    <ion-list>
+
+        <div class="list">
+
+          <label class="item item-input">
+            <span class="input-label">Nombre :</span>
+               <input type="text" placeholder="Producto" ng-model="items.nombre">
+          </label>
+
+          <label class="item item-input">
+               <span class="input-label">Caracteristicas :</span> 
+               <input type="text" placeholder="como es lo que busca" ng-model="items.caracteristica">
+          </label>
+
+          <label class="item item-input">
+              <span class="input-label">Categoria :</span>
+               <select id="categoria" ng-model="items.categoria">
+        <option value="Ropa Mujer">Ropa Mujer</option>
+        <option value="Ropa Hombre">Ropa Hombre</option>
+        <option value="Ropa Niños"> Ropa Niños</option>
+        <option value="Ropa Bebes"> Ropa Bebes</option>
+        <option value="Ropa Adultos">Ropa Adultos</option>
+        <option value="Ropa Exclusiva">Ropa Exclusiva</option>
+         </select>
+
+          </label>
+
+          <label class="item item-input">
+            <span class="input-label">Calidad o Marca :</span>
+               <input type="text" placeholder="ej: adidas, nike" ng-model="items.calidad">
+          </label>
+
+          <label class="item item-input">
+               <span class="input-label">Habito de Compra :</span>
+               <select id="habito" ng-model="items.habito">
+                 <option value="hogar">Fin de Mes</option>
+                 <option value="hogar">Dias de Feria</option>
+                <option value="ropa"> Casual</option>
+                <option value="comida"> </option>
+               <option value="hogar">Ropa Adultos</option>
+                <option value="hogar">Ropa Exclusiva</option>
+         </select>
+         </label>
+
+          <label class="item item-input">
+               <span class="input-label">Precio :</span>
+               <input type="text" placeholder="estimacion de intencion de pagar" ng-model="items.precio">
+          </label>
+
+          <label class="item item-input">
+          <button class="button button-icon icon ion-camera" ng-click="takePicture()"> Select picture </button>
+          </label>
+
+          <img src="data:image/jpg;base64,{{items.photo}}" style="max-width: 100%;" ng-if="(items.photo != '')">
+
+         <button class="button button-block button-positive" ng-click="createItems()">Guardar Producto</button>
+    
+
+        </div>
+    </ion-list>
+  </ion-content>
+</ion-view>

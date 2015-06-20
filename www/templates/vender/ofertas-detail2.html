@@ -1,0 +1,45 @@
+<ion-view view-title="Regalo">
+
+<ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+</ion-nav-bar>
+
+  <ion-content class="padding">
+    
+      <label class="item item-input">
+            <span class="input-label">X la  compra de :</span> 
+            <input type="number" ng-model="product.xcompra">
+            <span class="input-label">Unidades</span> 
+          
+      </label>
+    	
+      <label class="item item-input">
+            <span class="input-label">Te regalamos  </span> 
+            <input type="number" ng-model="product.ragalos">
+            <span class="input-label">%</span> 
+
+      </label>
+
+      
+
+      <label class="item item-input">
+            <span class="input-label">Un llavero</span> 
+            <input type="text" ng-model="product.llavero">
+      </label>
+
+      <label class="item item-input">
+            <span class="input-label">Fecha Inicial</span> 
+            <input type="date" ng-model="product.finicial">
+      </label>
+
+      <label class="item item-input">
+            <span class="input-label">Fecha Final</span> 
+            <input type="date" ng-model="product.ffinal">
+      </label>
+
+       <button class="button button-block button-positive" ng-click="ofertas0()">
+        Subir!
+      </button>
+  </ion-content>
+</ion-view>

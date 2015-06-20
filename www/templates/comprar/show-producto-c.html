@@ -1,0 +1,53 @@
+<ion-view view-title="Item para Comprar">
+
+
+  <ion-content>
+ <div class="item item-avatar">
+      
+        <img src="{{item.image_urls['1080x1440'][0].url}}">
+        <h2>Nombre Producto:{{item.nombre}}</h2>
+        <p>Caracteristicas:{{item.caracteristica}}</p>
+        <p>Categoria:{{item.categoria}}</p>
+
+        <p>Calidad o Marca: {{item.calidad}} </p>
+
+        <p>Habito de Compra{{item.habito}}</p>
+
+        <p>Precio {{item.precio}}</p>
+</div>
+    <ion-list>
+
+    <div class="list">
+
+      <div class="item item-input-inset">
+        <label class="item-input-wrapper">
+          <input type="text" ng-model="searchQuery" placeholder="Buscando tus Items">
+        </label>
+        <button class="button button-small">
+          Search
+        </button>
+      </div>
+
+    </div>
+
+
+    <ion-refresher
+      pulling-text="Pull to refresh..."
+      on-refresh="doRefresh()">
+    </ion-refresher>
+    
+      <ion-item class="item-remove-animate item-avatar item-icon-right" collection-repeat="product in products | filter:searchQuery" type="item-text-wrap" >
+        <img ng-src="{{product.image_urls['91x121'][0].url}}" >
+        <h2>{{product.name}}</h2>
+        <p>{{product.sale_price | currency}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+        <a class="button" ng-click="verDetalle(product)">Ver Item</a>
+         <ion-toggle  ng-model="settings.enableFriends">
+        Comprar
+    </ion-toggle>
+      </ion-item>
+      
+    </ion-list>
+  </ion-content>
+</ion-view>
+

@@ -1,0 +1,82 @@
+<ion-view view-title="Add Producto" >
+  <ion-content>
+    <div class="list list-inset">
+      <label class="item item-input ">
+        <span class="input-label">Nombre del Producto:</span>
+        <input type="text" ng-model="product.name">
+      </label>
+      <label class="item item-input ">
+        <span class="input-label">Nombre Alternativo:</span>
+        <input type="text" ng-model="product.name1">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Descriccion del producto:</span>
+        <textarea rows="4" ng-model="product.content.description"></textarea>
+      </label>
+      
+      <label class="item item-input item-select">
+        <div class="input-label">
+        Categoria
+        </div>
+        <select id="fishSelect" ng-model="product.categoria">
+        <option value="hogar">Hogar</option>
+        <option value="ropa">Ropa</option>
+        <option value="comida">Comida</option>
+        <option value="arte">Arte</option>
+        <option value="electrodomesticos">Electrodomestico</option>
+        <option value="libros">Libros</option>
+        <option value="otros">Otros</option>
+        </select>
+      </label>
+      
+       <label class="item item-input item-select">
+       <span class="input-label">Talla</span>       
+             <select id="tallaSelect" ng-model="product.talla">
+              <option value="XXXL">XXXL</option>
+              <option value="XXL">XXL</option>
+               </select>
+       </label>
+      
+      <label class="item item-input">
+            <span class="input-label">Cantidad</span> 
+            <input type="number" ng-model="product.cantidad">
+      </label>
+
+      <label class="item item-input item-select">
+            <span class="input-label">Genero</span>
+               <select id="tallaSelect" ng-model="product.genero">
+              <option value="hombre">Hombre</option>
+              <option value="mujer">Mujer</option>
+              <option value="niño">Niño</option>
+              <option value="niña">Niña</option>
+               </select>
+      </label>
+      <label class="item item-input">
+      <span class="input-label">Precio :</span>                <input type="number" ng-model="product.precio">
+      </label>
+
+      
+
+      <label class="item item-input">
+          <button class="button button-icon icon ion-camera" ng-click="takePicture()"> Select picture </button>
+      </label>
+      <img src="data:image/jpg;base64,{{product.photo}}" style="max-width: 100%;" ng-if="(product.photo != '')">
+      
+
+
+ <label class="item item-input">
+        <span class="input-label" >Añadir Ofertas:</span>
+<button class="button button-clear button-positive"  ng-click="detailOfertas()">
+          Añadir Ofertas
+        </button>
+      </label>
+
+
+      <button class="button button-block button-positive" ng-click="venderProduct()">
+        Subir!
+      </button>
+    </div>
+
+  </ion-content>
+</ion-view>
+

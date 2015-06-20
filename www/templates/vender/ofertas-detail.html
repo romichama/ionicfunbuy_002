@@ -1,0 +1,48 @@
+<ion-view view-title="Compras por Mayor">
+
+<ion-nav-bar >
+    
+      <ion-nav-back-button class="button-clear">
+      <i class="ion-arrow-left-c"></i>Back
+      </ion-nav-back-button>
+</ion-nav-bar>
+
+
+  <ion-content class="padding">
+    <label class="item item-input item-select">
+        <div class="input-label">
+        Cantidad
+        </div>
+        <select id="fishSelect" ng-model="product.categoria">
+        <option value="hogar">Cuarto Docena</option>
+        <option value="hogar">Media Docena</option>
+        <option value="ropa"> 1 Docena</option>
+        <option value="comida"> + de Docena</option>
+        </select>
+      </label>
+
+      <label class="item item-input">
+            <span class="input-label">Precio Unitario</span> 
+            <input type="number" ng-model="product.punidad">
+      </label>
+    	
+      <label class="item item-input">
+            <span class="input-label">Precio por Mayor</span> 
+            <input type="number" ng-model="product.pmayor">
+      </label>
+
+      <label class="item item-input">
+            <span class="input-label">Rebaja a Precio</span> 
+            <input type="number" ng-model="product.rprecio">
+      </label>
+
+      <label class="item item-input">
+            <span class="input-label">Precio Final</span> 
+            <input type="number" ng-model="product.pfinal">
+      </label>
+
+       <button class="button button-block button-positive" ng-click="ofertas0()">
+        Subir!
+      </button>
+  </ion-content>
+</ion-view>

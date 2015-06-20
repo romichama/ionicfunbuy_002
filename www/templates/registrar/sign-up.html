@@ -1,0 +1,32 @@
+<ion-view view-title="Registrarse">
+  <ion-content>
+      <div class="list">
+
+      <div class="list card">
+      <div class="item item-divider">Redes Sociales</div>
+      <div class="item item-body">
+              <a class="button button-positive" href="#/tab/comprar-l">Facebook</a>
+              <a class="button button-positive" href="#/tab/comprar-l" >Google +</a>
+              <a class="button button-positive" href="#/tab/comprar-l" >Twitter</a>
+      </div>
+      </div>
+
+
+      <label class="item item-input">
+        <span class="input-label" >Email</span>
+        <input type="text" ng-model="user.email">
+      </label>
+      
+
+      <label class="item item-input">
+        <span class="input-label" >Password</span>
+        <input type="password" ng-model="user.password">
+      </label>
+      <label class="item">
+        <button class="button button-block button-positive" ng-click="createUser()">
+          Sign Up
+        </button>
+      </label>
+    </div>
+  </ion-content>
+</ion-view>

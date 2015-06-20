@@ -1,0 +1,52 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+
+<ion-view view-title="{{lista.nombre}}" >
+
+
+
+<ion-content class="padding" >
+<table>
+<tr>
+  <td>
+    Comprando de: {{lista.descripcion}} 
+  </td>
+</tr>
+</table>  
+  
+
+    <div class="list">
+
+      <div class="item item-input-inset">
+        <label class="item-input-wrapper">
+          <input type="text" ng-model="searchQuery" placeholder="Buscando tus Items">
+        </label>
+        <button class="button button-small">
+          Search
+        </button>
+      </div>
+
+    </div>
+
+
+    <ion-refresher
+      pulling-text="Pull to refresh..."
+      on-refresh="doRefresh()">
+    </ion-refresher>
+
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" collection-repeat="item in items " type="item-text-wrap" href="#/tab/comprando-producto/{{item.$id}}">
+        <img ng-src="{{item.photo}}" >
+        <h2>{{item.nombre}}</h2>
+        <p>{{item.calidad}} </p>    
+      </ion-item>
+    
+      </ion-list>
+  </ion-content>
+</ion-view>
+
+

@@ -1,0 +1,35 @@
+<ion-view view-title="Add Lista">
+  <ion-content>
+    <ion-list>
+
+        <div class="list">
+          <label class="item item-input">
+            <span class="input-label">Nombre Lista:</span>
+            <input type="text" placeholder="Nombre  de la Lista del Producto" ng-model="lista.nombre">
+        	</label>
+
+          <label class="item item-input">
+                <span class="input-label">Descripcion :</span>
+               <input type="text" placeholder="Descripcion de la Lista" ng-model="lista.descripcion">
+        	</label>
+
+          <label class="item item-input">
+               <span class="input-label">Palabra clave para la lista:</span>
+               <input type="text" placeholder="Frecuencia caso de Compra" ng-model="lista.frecuencia">
+        	</label>
+          
+          <label class="item item-input">
+          <button class="button button-icon icon ion-camera" ng-click="takePicture()"> Select picture </button>
+          </label>
+
+          <img src="data:image/jpg;base64,{{product.photo}}" style="max-width: 100%;" ng-if="(lista.photo != '')">
+        
+         <button class="button button-block button-positive" ng-click="createLista()">
+          Guardar
+        </button>
+
+
+        </div>
+    </ion-list>
+  </ion-content>
+</ion-view>

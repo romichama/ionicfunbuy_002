@@ -1,0 +1,44 @@
+<ion-view view-title="Compras por Descuento">
+
+<ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+</ion-nav-bar>
+
+  <ion-content class="padding">
+    
+      <label class="item item-input">
+            <span class="input-label">Precio Unitario</span> 
+            <input type="number" ng-model="product.punitario">
+
+      </label>
+    	
+      <label class="item item-input">
+            <span class="input-label">Descuento del </span> 
+            <input type="number" ng-model="product.descuento">
+            <span class="input-label">%</span> 
+
+      </label>
+
+      <label class="item item-input">
+            <span class="input-label">Precio Final</span> 
+            <input type="number" ng-model="product.pfinal">
+      </label>
+
+      <label class="item item-input">
+            <span class="input-label">Fecha Inicio</span> 
+            <input type="date" ng-model="product.finicio">
+      </label>
+
+
+
+      <label class="item item-input">
+            <span class="input-label">Fecha Final</span> 
+            <input type="date" ng-model="product.ffinal">
+      </label>
+
+       <button class="button button-block button-positive" ng-click="ofertas0()">
+        Subir!
+      </button>
+  </ion-content>
+</ion-view>

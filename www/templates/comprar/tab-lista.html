@@ -1,0 +1,34 @@
+<ion-view view-title="Lista">
+    
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-buttons side="right">
+        <a class="button button-clear button-positive" href="#/tab/add-lista" >
+          <i class="ion-plus-circled"></i>
+          Add Lista
+        </a>
+      </ion-nav-buttons>
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+
+
+
+  <ion-content>
+    <ion-list>
+
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="lista in listas" type="item-text-wrap" href="#/tab/productos/{{lista.$id}}">
+      
+        <img ng-src={{lista.photo}} >
+        <h2>{{lista.nombre}}</h2>
+        <p>{{lista.descripcion}}</p>
+        <a href="#/tab/edit-lista/{{lista.id}}">Editar Lista</a>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(lista)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+
+    </ion-list>
+  </ion-content>
+</ion-view>

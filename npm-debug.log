@@ -1,0 +1,158 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'http',
+1 verbose cli   '200',
+1 verbose cli   'https://registry.npmjs.org/cordova-ios' ]
+2 info using npm@2.10.1
+3 info using node@v0.12.4
+4 verbose install initial load of /Users/romichama/Desktop/nuevo/myApp/package.json
+5 warn package.json myapp@1.0.0 No repository field.
+6 warn package.json myapp@1.0.0 No README data
+7 warn package.json myapp@1.0.0 No license field.
+8 verbose readDependencies loading dependencies from /Users/romichama/Desktop/nuevo/myApp/package.json
+9 silly cache add args [ 'http', null ]
+10 verbose cache add spec http
+11 silly cache add args [ '200', null ]
+12 verbose cache add spec 200
+13 silly cache add args [ 'https://registry.npmjs.org/cordova-ios', null ]
+14 verbose cache add spec https://registry.npmjs.org/cordova-ios
+15 silly cache add parsed spec { raw: 'http',
+15 silly cache add   scope: null,
+15 silly cache add   name: 'http',
+15 silly cache add   rawSpec: '',
+15 silly cache add   spec: '*',
+15 silly cache add   type: 'range' }
+16 silly addNamed http@*
+17 verbose addNamed "*" is a valid semver range for http
+18 silly addNameRange { name: 'http', range: '*', hasData: false }
+19 silly mapToRegistry name http
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/http
+23 verbose addNameRange registry:https://registry.npmjs.org/http not in flight; fetching
+24 silly cache add parsed spec { raw: '200',
+24 silly cache add   scope: null,
+24 silly cache add   name: '200',
+24 silly cache add   rawSpec: '',
+24 silly cache add   spec: '*',
+24 silly cache add   type: 'range' }
+25 silly addNamed 200@*
+26 verbose addNamed "*" is a valid semver range for 200
+27 silly addNameRange { name: '200', range: '*', hasData: false }
+28 silly mapToRegistry name 200
+29 silly mapToRegistry using default registry
+30 silly mapToRegistry registry https://registry.npmjs.org/
+31 silly mapToRegistry uri https://registry.npmjs.org/200
+32 verbose addNameRange registry:https://registry.npmjs.org/200 not in flight; fetching
+33 silly cache add parsed spec { raw: 'https://registry.npmjs.org/cordova-ios',
+33 silly cache add   scope: null,
+33 silly cache add   name: null,
+33 silly cache add   rawSpec: 'https://registry.npmjs.org/cordova-ios',
+33 silly cache add   spec: 'https://registry.npmjs.org/cordova-ios',
+33 silly cache add   type: 'remote' }
+34 silly mapToRegistry name https://registry.npmjs.org/cordova-ios
+35 silly mapToRegistry using default registry
+36 silly mapToRegistry registry https://registry.npmjs.org/
+37 silly mapToRegistry uri https://registry.npmjs.org/cordova-ios
+38 verbose addRemoteTarball https://registry.npmjs.org/cordova-ios not in flight; adding
+39 verbose addRemoteTarball [ 'https://registry.npmjs.org/cordova-ios', null ]
+40 verbose request uri https://registry.npmjs.org/200
+41 verbose request no auth needed
+42 info attempt registry request try #1 at 11:43:02 PM
+43 verbose request id 69b47a60384e3e94
+44 http request GET https://registry.npmjs.org/200
+45 verbose request uri https://registry.npmjs.org/http
+46 verbose request no auth needed
+47 info attempt registry request try #1 at 11:43:02 PM
+48 verbose etag "9ARRJ1G4SWEZRN9FK6352ZEYA"
+49 http request GET https://registry.npmjs.org/http
+50 info retry fetch attempt 1 at 11:43:02 PM
+51 info attempt registry request try #1 at 11:43:02 PM
+52 http fetch GET https://registry.npmjs.org/cordova-ios
+53 http fetch 200 https://registry.npmjs.org/cordova-ios
+54 silly fetchAndShaCheck shasum 94e51f4bd70d12bd14ba1f14258da8b9ac121c1e
+55 verbose addTmpTarball /var/folders/cf/2jsk8v9n2xl9wdmtkd0hxnnm0000gn/T/npm-4096-57c4a356/registry.npmjs.org/cordova-ios not in flight; adding
+56 verbose addTmpTarball validating metadata from /var/folders/cf/2jsk8v9n2xl9wdmtkd0hxnnm0000gn/T/npm-4096-57c4a356/registry.npmjs.org/cordova-ios
+57 verbose tar unpack /var/folders/cf/2jsk8v9n2xl9wdmtkd0hxnnm0000gn/T/npm-4096-57c4a356/registry.npmjs.org/cordova-ios
+58 verbose tar unpacking to /var/folders/cf/2jsk8v9n2xl9wdmtkd0hxnnm0000gn/T/npm-4096-57c4a356/unpack-6f9e5dc2cf7b
+59 silly gentlyRm /var/folders/cf/2jsk8v9n2xl9wdmtkd0hxnnm0000gn/T/npm-4096-57c4a356/unpack-6f9e5dc2cf7b is being purged
+60 verbose gentlyRm don't care about contents; nuking /var/folders/cf/2jsk8v9n2xl9wdmtkd0hxnnm0000gn/T/npm-4096-57c4a356/unpack-6f9e5dc2cf7b
+61 silly gunzTarPerm modes [ '755', '644' ]
+62 error not a package /var/folders/cf/2jsk8v9n2xl9wdmtkd0hxnnm0000gn/T/npm-4096-57c4a356/registry.npmjs.org/cordova-ios
+63 http 200 https://registry.npmjs.org/200
+64 silly get cb [ 200,
+64 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+64 silly get     etag: '"9H4MR2B7R791B0ATCWSG74OOJ"',
+64 silly get     'content-type': 'application/json',
+64 silly get     'cache-control': 'max-age=60',
+64 silly get     'content-length': '3234',
+64 silly get     'accept-ranges': 'bytes',
+64 silly get     date: 'Wed, 10 Jun 2015 03:37:16 GMT',
+64 silly get     via: '1.1 varnish',
+64 silly get     age: '0',
+64 silly get     connection: 'keep-alive',
+64 silly get     'x-served-by': 'cache-atl6232-ATL',
+64 silly get     'x-cache': 'MISS',
+64 silly get     'x-cache-hits': '0',
+64 silly get     'x-timer': 'S1433907436.487278,VS0,VE111',
+64 silly get     vary: 'Accept' } ]
+65 verbose get saving 200 to /Users/romichama/.npm/registry.npmjs.org/200/.cache.json
+66 silly addNameRange number 2 { name: '200', range: '*', hasData: true }
+67 silly addNameRange versions [ '200', [ '0.0.1' ] ]
+68 silly addNamed 200@0.0.1
+69 verbose addNamed "0.0.1" is a plain semver version for 200
+70 silly mapToRegistry name 200
+71 silly mapToRegistry using default registry
+72 silly mapToRegistry registry https://registry.npmjs.org/
+73 silly mapToRegistry uri https://registry.npmjs.org/200
+74 verbose addRemoteTarball https://registry.npmjs.org/200/-/200-0.0.1.tgz not in flight; adding
+75 verbose addRemoteTarball [ 'https://registry.npmjs.org/200/-/200-0.0.1.tgz',
+75 verbose addRemoteTarball   'e1181dc04e28c913411aefc775157c67027d2b9f' ]
+76 info retry fetch attempt 1 at 11:43:03 PM
+77 info attempt registry request try #1 at 11:43:03 PM
+78 http fetch GET https://registry.npmjs.org/200/-/200-0.0.1.tgz
+79 http 304 https://registry.npmjs.org/http
+80 silly get cb [ 304,
+80 silly get   { date: 'Wed, 10 Jun 2015 03:37:16 GMT',
+80 silly get     via: '1.1 varnish',
+80 silly get     'cache-control': 'max-age=60',
+80 silly get     etag: '"9ARRJ1G4SWEZRN9FK6352ZEYA"',
+80 silly get     age: '0',
+80 silly get     connection: 'keep-alive',
+80 silly get     'x-served-by': 'cache-atl6226-ATL',
+80 silly get     'x-cache': 'MISS',
+80 silly get     'x-cache-hits': '0',
+80 silly get     'x-timer': 'S1433907436.540525,VS0,VE81',
+80 silly get     vary: 'Accept' } ]
+81 verbose etag https://registry.npmjs.org/http from cache
+82 verbose get saving http to /Users/romichama/.npm/registry.npmjs.org/http/.cache.json
+83 silly addNameRange number 2 { name: 'http', range: '*', hasData: true }
+84 silly addNameRange versions [ 'http', [ '0.0.0' ] ]
+85 silly addNamed http@0.0.0
+86 verbose addNamed "0.0.0" is a plain semver version for http
+87 silly cache afterAdd http@0.0.0
+88 verbose afterAdd /Users/romichama/.npm/http/0.0.0/package/package.json not in flight; writing
+89 verbose afterAdd /Users/romichama/.npm/http/0.0.0/package/package.json written
+90 http fetch 200 https://registry.npmjs.org/200/-/200-0.0.1.tgz
+91 silly fetchAndShaCheck shasum e1181dc04e28c913411aefc775157c67027d2b9f
+92 verbose addTmpTarball /var/folders/cf/2jsk8v9n2xl9wdmtkd0hxnnm0000gn/T/npm-4096-57c4a356/registry.npmjs.org/200/-/200-0.0.1.tgz not in flight; adding
+93 verbose addTmpTarball already have metadata; skipping unpack for 200@0.0.1
+94 silly cache afterAdd 200@0.0.1
+95 verbose afterAdd /Users/romichama/.npm/200/0.0.1/package/package.json not in flight; writing
+96 verbose afterAdd /Users/romichama/.npm/200/0.0.1/package/package.json written
+97 verbose stack Error: ENOENT, open '/var/folders/cf/2jsk8v9n2xl9wdmtkd0hxnnm0000gn/T/npm-4096-57c4a356/unpack-6f9e5dc2cf7b/package.json'
+97 verbose stack     at Error (native)
+98 verbose cwd /Users/romichama/Desktop/nuevo/myApp
+99 error Darwin 14.3.0
+100 error argv "node" "/usr/local/bin/npm" "install" "http" "200" "https://registry.npmjs.org/cordova-ios"
+101 error node v0.12.4
+102 error npm  v2.10.1
+103 error path /var/folders/cf/2jsk8v9n2xl9wdmtkd0hxnnm0000gn/T/npm-4096-57c4a356/unpack-6f9e5dc2cf7b/package.json
+104 error code ENOENT
+105 error errno -2
+106 error enoent ENOENT, open '/var/folders/cf/2jsk8v9n2xl9wdmtkd0hxnnm0000gn/T/npm-4096-57c4a356/unpack-6f9e5dc2cf7b/package.json'
+106 error enoent This is most likely not a problem with npm itself
+106 error enoent and is related to npm not being able to find a file.
+107 verbose exit [ -2, true ]

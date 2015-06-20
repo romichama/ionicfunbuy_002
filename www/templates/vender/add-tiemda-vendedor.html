@@ -1,0 +1,56 @@
+<ion-view view-title="Registrar Tiemda">
+  <ion-content>
+    <ion-list>
+       <div class="list list-inset">
+        	<label class="item item-input">
+            <span class="input-label">Nombre  </span>
+               <input type="text" placeholder=" Producto" ng-model="tienda.nombre">
+        	</label>
+          <label class="item item-input">
+               <span class="input-label">Nombre de la tiemda</span> 
+               <input type="text" placeholder="como lo identifican a su tiemda" ng-model="tienda.caracteristica">
+        	</label>
+          <label class="item item-input">
+               <span class="input-label"># Cases/ Calle </span>
+               <input type="text" placeholder="numero de caseta o direccion " ng-model="tienda.direccion">
+        	</label>
+
+          <label class="item item-input">
+               <span class="input-label">Descripcion:</span>
+               <textarea rows="4" ng-model="tienda.content.descripcion"></textarea>
+          </label>
+
+          <label class="item item-input">
+               <span class="input-label">Organizacion:</span>
+               <input type="text" placeholder="Si pertenece a un sindicato, organizacion comercial , etc" ng-model="tienda.afiliacion">
+          </label>
+
+            <label class="item item-input">
+               <span class="input-label">Telefono</span>
+               <input type="text" placeholder="Fijo/Celular" ng-model="tienda.telefono">
+          </label>
+
+          <label class="item item-input">
+               <span class="input-label"> # Numero</span>
+               <input type="text" placeholder="NIC / RUC / # Regimen Simplificado" ng-model="tienda.precio">
+          </label>
+         
+          <label class="item item-input">
+                  <button class="button button-icon icon ion-camera" ng-click="takePicture()"> Seleccione Imagen del Negocio </button>
+          </label>
+                 <img src="data:image/jpg;base64,{{tienda.photo}}" style="max-width: 100%;" ng-if="(tienda.photo != '')">
+         
+          <div class="item">
+              <b>Lat: </b> {{tienda.lat}}
+              <br>
+              <b>Long: </b> {{tienda.long}}
+           </div>
+
+
+         <button class="button button-block button-positive" ng-click="createTienda()">Guardar Informacion</button>
+    
+
+        </div>
+    </ion-list>
+  </ion-content>
+</ion-view>

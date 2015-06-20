@@ -1,0 +1,17 @@
+<ion-view view-title="Comprando Elija su Lista">
+    
+   
+
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="lista in listas" type="item-text-wrap" href="#/tab/c-comprando/{{lista.$id}}">
+         <img ng-src="{{lista.photo}}" >
+        <h2>{{lista.nombre}}</h2>
+        <p>{{lista.descripcion}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
